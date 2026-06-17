@@ -18,7 +18,7 @@
         "start": "npx webpack-dev-server"
     },
     "devDependencies": {
-        "@babel/preset-env": "^7.15.6",
+        "@babel/preset-env": "^8.0.0",
         "@corejslib/babel": "^1.4.25",
         "babel-loader": "^10.0.0",
         "html-webpack-plugin": "^5.6.3",
