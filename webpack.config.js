@@ -52,7 +52,7 @@ const config = {
             "cacheGroups": {
                 "vendors": {
                     "name": "vendors",
-                    "test": /[/\\]node_modules[/\\]/,
+                    "test": /[\/\\]node_modules[\/\\]/v,
                     "priority": -10,
                     "chunks": "initial",
                 },
@@ -72,7 +72,7 @@ const config = {
 
             // js
             {
-                "test": /\.[cm]?jsx?$/,
+                "test": /\.[cm]?jsx?$/v,
                 "resolve": {
                     "fullySpecified": false,
                 },
@@ -80,7 +80,7 @@ const config = {
 
                     // web workers *.worker.js
                     {
-                        "test": /\.worker\.[cm]?js$/,
+                        "test": /\.worker\.[cm]?js$/v,
 
                         "type": "asset/resource",
                         "generator": {
@@ -102,7 +102,7 @@ const config = {
 
             // vue
             {
-                "test": /\.vue$/,
+                "test": /\.vue$/v,
                 "use": [
                     {
                         "loader": "vue-loader",
